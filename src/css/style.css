@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cor0: seagreen;
+    --cor1: #e6dddd;
+    --cor2: #8c8c8c;
+    --cor3: #666666;
+    --cor4: #515151;
+    --cor5: #2e2e2e;
+}
+
+body {
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(56,56,56,1) 100%, rgba(56,56,56,1) 100%);   
+}
+body img#background-inicio {
+    position: absolute;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+}
+body img#background-final {
+    position: absolute;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    bottom: 0;
+    transform: rotate(-180deg);
+}
+
+header {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 10px; 
+     
+}
+header nav ul {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    margin-right: 20px;
+}
+header p {
+    color: var(--cor1);
+    font-size: 20px;
+}
+header nav a.icone {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor1);
+}
+header nav a.icone:hover {
+    opacity: 0.5;
+}
+header nav a#botao-home {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor1);    
+}
+header nav a#botao-home:hover {
+    color: var(--cor0);
+    border: 2px solid var(--cor0);   
+}
+
+
+section#section-home {
+    min-height: 300px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;   
+}
+section#section-home div {
+    
+    margin:  120px 0 ;   
+}
+section#section-home h1 {
+    font-size: 85px;
+    color: var(--cor5);
+    padding: 10px;
+}
+section#section-home h1 span {
+    text-decoration: underline var(--cor0);
+}
+section#section-home p#p1 {
+    font-size: 30px;
+    padding: 10px;
+    color: var(--cor4);
+}
+section#section-home p#p2 {
+    font-size: 20px;
+    line-height: 1.5em;
+    margin: 50px 10px;
+    color: var(--cor5);
+}
+section#section-home div#div-botoes {
+    margin: 0;
+}
+section#section-home div#div-botoes button {
+    color: var(--cor5);
+    font-size: 20px;
+    margin: 20px 10px;
+    text-decoration: none;
+    background: transparent;
+    padding: 10px;
+    border: 2px solid var(--cor5);
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+}
+section#section-home div#div-botoes button:hover {
+    color: var(--cor0);
+    cursor: pointer;
+    transform: scale(1.1); 
+    border: 2px solid var(--cor0);
+}
+section#section-home div#div-image {
+    margin-top: 50px;
+}
+section#section-home div#div-image img {
+    border-radius: 100px;   
+}
+
+
+main {
+    min-height: 300px;
+    max-width: 1200px;
+    margin: auto;  
+}
+main div#div-projetos {
+    border-top: 2px solid var(--cor5);
+    padding: 40PX 0;
+}
+main div {
+    margin: 60px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;    
+}
+main h2 {
+    font-size: 45px;
+    color: var(--cor5);
+}
+main p {
+    font-size: 25px;
+    color: var(--cor5);
+    line-height: 1.5em;
+    text-align: center;
+    padding: 20px;
+}
+main p a {
+    color: var(--cor5);
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+main p a:hover {
+    text-decoration: underline var(--cor0);
+}
+main div img {
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+}
+main div img:hover {
+    transform: scale(1.1);
+}
+
+
+section#section-tecnologias div#div-borda {
+    border-top: 2px solid var(--cor5);
+}
+section#section-tecnologias h2 {
+    
+    font-size: 45px;
+    color: var(--cor5);
+    text-align: center;
+    padding: 30px;
+}
+section#section-tecnologias div {
+    min-width: 300px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section#section-tecnologias div.divTecnologias {
+    display: block;
+    text-align: center;
+    margin: 50px;   
+}
+section#section-tecnologias p {
+    padding: 10px;
+    color: var(--cor5);
+    font-weight: normal;
+    font-size: 20px;
+}
+
+section#section-extracurriculares h3 {
+    text-align: center;
+}
+section#section-extracurriculares div {
+    order: 1px solid red;
+    display: flex;
+    justify-content: center;
+    padding: 10px;   
+}
+section#section-extracurriculares nav li {
+    padding: 10px;
+}
+
+
+
+section#section-contatos {
+    background-color: var(--cor4);
+    margin-top: 150px;   
+}
+section#section-contatos h2 {
+    font-size: 45px;
+    color: var(--cor1);
+    text-align: center;
+    padding: 30px;
+}
+section#section-contatos div {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+section#section-contatos div.div-contatos {
+    display: block;
+    text-align: center;
+    margin: 50px;
+}
+section#section-contatos div a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+section#section-contatos div h3 {
+    padding: 10px;
+    color: var(--cor1);
+    font-weight: normal;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: var(--cor1);
+    padding: 30px 0;
+    text-align: center;
+}
